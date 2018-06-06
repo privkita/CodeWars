@@ -7,7 +7,6 @@ public class RevRot {
 	public static String revRot(String strng, int sz) {
 
 		ArrayList<char[]> chunks = new ArrayList<char[]>();
-//		String newStrng = "";
 		StringBuilder sb = new StringBuilder();
 
 		if (sz == 0 || strng.length() == 0 || strng.length() < sz)
@@ -26,7 +25,6 @@ public class RevRot {
 			if (sum % 2 == 0) {
 				for (int i = (chunk.length - 1); i >= 0; i--)
 					sb.append(chunk[i]);
-//					newStrng += chunk[i];
 			} else {
 				for (int i = 1; i < chunk.length; i++)
 					sb.append(chunk[i]);
